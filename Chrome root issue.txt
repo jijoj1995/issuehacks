@@ -7,7 +7,9 @@ Run from terminal
 or
 
 Open the file opt/google/chrome/google-chrome and replace
+gedit /opt/google/chrome/google-chrome
 
+change:
     exec -a "$0" "$HERE/chrome" "$@"
 
 to
