@@ -1,0 +1,17 @@
+
+
+Run from terminal
+
+# google-chrome --no-sandbox --user-data-dir
+
+or
+
+Open the file opt/google/chrome/google-chrome and replace
+
+    exec -a "$0" "$HERE/chrome" "$@"
+
+to
+
+    exec -a "$0" "$HERE/chrome" "$@" --user-data-dir --no-sandbox
+
+It's working for chrome version 49 in CentOS 6. Chrome will give warning also.
